@@ -127,7 +127,7 @@ pub trait FieldVar<F: Field, ConstraintF: PrimeField>:
         Ok(self)
     }
 
-    /// Coputes `-self`.
+    /// Computes `-self`.
     fn negate(&self) -> Result<Self, SynthesisError>;
 
     /// Sets `self = -self`.
