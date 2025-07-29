@@ -90,7 +90,7 @@ pub trait CurveVar<C: CurveGroup, ConstraintF: PrimeField>:
     /// Sets `self = self + self`.
     fn double_in_place(&mut self) -> Result<(), SynthesisError>;
 
-    /// Coputes `-self`.
+    /// Computes `-self`.
     fn negate(&self) -> Result<Self, SynthesisError>;
 
     /// Computes `bits * self`, where `bits` is a little-endian
